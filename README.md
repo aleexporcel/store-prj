@@ -24,50 +24,32 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+A store project done with: [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Installation
-
-```bash
-$ npm install
-```
 
 ## Running the app
 
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+npm run docker
 ```
 
-## Test
+## TO DO :
 
-```bash
-# unit tests
-$ npm run test
+A new company needs to address these requirements:
 
-# e2e tests
-$ npm run test:e2e
+Create a Node API with Nest.js.
+Connect the Node API to MongoDB using nest/mongoose.
+Implement JWT as an authentication strategy.
 
-# test coverage
-$ npm run test:cov
-```
+The company needs to store:
+products with a name, SKU, picture (this has to be a file), and price. A product can be used to create orders. 
+An order has an identifier, client name, total, and product list. 
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+Develop the following endpoints:
+- Create a product.
+- Request a product.
+- Create an order.
+- Update an order.
+- Get the total sold price in the last month.
+- Get the higher amount order
+Bonus: Dockerize MongoDB and the Node API.
